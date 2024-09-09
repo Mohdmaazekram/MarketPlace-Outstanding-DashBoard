@@ -1,0 +1,96 @@
+-- CREATE OR REPLACE TABLE
+  -- `project_id.dataset_name.Mktplace_Gsheet_Outamt` AS
+SELECT
+  *
+FROM (
+  SELECT
+    Order__ID,
+    Mkt_Order_ID,
+    ROUND(Outstanding_Amount) AS Settled_Amount,
+    MarketPlace_Name
+  FROM (
+    SELECT
+      Magento_Id AS Order__ID,
+      "Null" AS Mkt_Order_ID,
+      SUM(SAFE_CAST(Settled_Amount AS float64)) Outstanding_Amount,
+      "Myntra" AS MarketPlace_Name
+    FROM
+      `project_id.dataset_name.Myntra_outstanding_payment`
+    GROUP BY
+      1,
+      2
+    UNION ALL
+    SELECT
+      "Null" AS Magento_Id,
+      TS_Order_ID,
+      SUM(SAFE_CAST(PD_Settlement_Value AS float64)) PD_Settlement_Value,
+      "Flipkart" AS MarketPlace_Name
+    FROM
+      `project_id.dataset_name.Flipkart_outstanding_payment`
+    GROUP BY
+      1,
+      2
+    UNION ALL
+    SELECT
+      Magento_Id,
+      Mrk_order_id,
+      final_payout,
+      MarketPlace_Name
+    FROM (
+      SELECT
+        *
+      FROM (
+        SELECT
+          "Null" AS Magento_Id,
+          eretail_orderno AS Mrk_order_id,
+          SUM(SAFE_CAST(REPLACE(final_payout,",","") AS float64)) AS final_payout,
+          "Nykaa" AS MarketPlace_Name
+        FROM
+          `project_id.dataset_name.Nykaa_outstanding_payment`
+        GROUP BY
+          1,
+          2))
+    UNION ALL
+    SELECT
+      "Null" AS Magento_Id,
+      CONCAT(REGEXP_EXTRACT(OrderID_SKU,r"^\d+"),"_",REGEXP_EXTRACT(OrderID_SKU,r"\w+-\w-\w+$")) Mkt_order_id,
+      SUM(CAST(Remittance_Recovery_Amount AS float64)) Remittance_Recovery_Amount,
+      "Pepperfry" AS MarketPlace_Name
+    FROM
+      `project_id.dataset_name.Pepperfry_outstanding_payment`
+    GROUP BY
+      1,
+      2
+    UNION ALL
+    SELECT
+      "Null" AS Magento_Id,
+      order_id AS Mkt_Order_id,
+      SUM(SAFE_CAST(amount AS float64)) price_amount,
+      "Amazon" AS MarketPlace_Name
+    FROM
+      `project_id.dataset_name.Amazon_outstanding_payment`
+    GROUP BY
+      1,
+      2
+    UNION ALL
+    SELECT
+      SAFE_CAST(Magnto_Id AS string) Magento_Id,
+      "Null" AS Mkt_Order_id,
+      SUM(SAFE_CAST(Net_Payable AS float64)) Net_Payable,
+      "Tatacliq" AS MarketPlace_Name
+    FROM
+      `project_id.dataset_name.Tatacliq_outstanding_payment`
+    GROUP BY
+      1,
+      2
+    UNION ALL
+    SELECT
+      safe_cast(col10 as string) AS Magento_Id,
+      "Null" AS Mkt_Order_id,
+      SUM(SAFE_CAST(Amount AS float64)) price_amount,
+      "Ajio" AS MarketPlace_Name
+    FROM
+      `project_id.dataset_name.Ajio_outstandingg_payment`
+    GROUP BY
+      1,
+      2))
