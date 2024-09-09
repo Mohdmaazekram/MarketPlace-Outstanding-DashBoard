@@ -1,6 +1,6 @@
 # MarketPlace-Outstanding-DashBoard
 
-**Problem Statement:
+**Problem Statement:**
 
 The marketplace team receives a detailed Excel file on a monthly basis, containing comprehensive data about products available in the marketplace along with their payment details. This file includes various information such as:
 
@@ -19,7 +19,7 @@ Monthly Payment Summary: Display the total amount of payments received for each 
 Outstanding Amount: Show the outstanding amounts for each month.\
 Detailed Breakdown: Provide a detailed view of deductions, fees, and charges per order.
 
-**Solution:
+**Solution:**
 
 * Developed an automated dashboard solution for the Marketplace team to process payment details from various e-commerce platforms like Amazon, Flipkart, Tatacliq, Myntra, etc.
    
