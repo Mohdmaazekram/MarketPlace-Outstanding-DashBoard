@@ -20,7 +20,7 @@ The team requires a dashboard to efficiently track and analyze this data. The ke
 **Detailed Breakdown:** Provide a detailed view of deductions, fees, and charges per order.
 
 
-***Solution:***
+#***Solution:***
 
 * Developed an automated dashboard solution for the Marketplace team to process payment details from various e-commerce platforms like Amazon, Flipkart, Tatacliq, Myntra, etc.
    
