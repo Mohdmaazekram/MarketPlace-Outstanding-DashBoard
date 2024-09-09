@@ -1,8 +1,8 @@
 # MarketPlace-Outstanding-DashBoard
 
-Problem Statement:\
+Problem Statement:
 
-The marketplace team receives a detailed Excel file on a monthly basis, containing comprehensive data about products available in the marketplace along with their payment details. This file includes various information such as:\
+The marketplace team receives a detailed Excel file on a monthly basis, containing comprehensive data about products available in the marketplace along with their payment details. This file includes various information such as:
 
 Order dates\
 Settlement amounts\
