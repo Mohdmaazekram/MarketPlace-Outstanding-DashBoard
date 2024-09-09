@@ -1,7 +1,6 @@
 # MarketPlace-Outstanding-DashBoard
 
-❖ Developed an automated dashboard solution forthe Marketplace team to process payment details 
-      from various e-commerce platforms like Amazon, Flipkart, Tatacliq, Myntra, etc.
+❖ Developed an automated dashboard solution forthe Marketplace team to process payment details from various e-commerce platforms like Amazon, Flipkart, Tatacliq, Myntra, etc.
    
 ❖ Utilized BigQuery and SQL queries to transform unstructured data from Excel sheets into a structured format.
    
