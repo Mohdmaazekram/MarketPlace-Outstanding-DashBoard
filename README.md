@@ -1,6 +1,6 @@
 # MarketPlace-Outstanding-DashBoard
 
-Problem Statement:
+**Problem Statement:
 
 The marketplace team receives a detailed Excel file on a monthly basis, containing comprehensive data about products available in the marketplace along with their payment details. This file includes various information such as:
 
@@ -11,18 +11,17 @@ Charges to be incurred, including:\
    TCS (Tax Collected at Source)\
    Shipping fees (including tax)\
    Commission fees (including tax)\
-   Other deductions\
+   Other deductions
    
 The team requires a dashboard to efficiently track and analyze this data. The key functionalities needed for the dashboard include:\
 
-Monthly Payment Summary: Display the total amount of payments received for each month.
-Outstanding Amount: Show the outstanding amounts for each month.
+Monthly Payment Summary: Display the total amount of payments received for each month.\
+Outstanding Amount: Show the outstanding amounts for each month.\
 Detailed Breakdown: Provide a detailed view of deductions, fees, and charges per order.
-The objective is to create a user-friendly and dynamic dashboard that allows the marketplace team to easily monitor and manage their financials, ensuring they have timely insights into payments and outstanding amounts for effective decision-making.
 
+**Solution:
 
-
-* Developed an automated dashboard solution forthe Marketplace team to process payment details from various e-commerce platforms like Amazon, Flipkart, Tatacliq, Myntra, etc.
+* Developed an automated dashboard solution for the Marketplace team to process payment details from various e-commerce platforms like Amazon, Flipkart, Tatacliq, Myntra, etc.
    
 * Utilized BigQuery and SQL queries to transform unstructured data from Excel sheets into a structured format.
    
