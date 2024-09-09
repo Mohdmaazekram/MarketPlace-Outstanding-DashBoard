@@ -13,11 +13,12 @@ Charges to be incurred, including:\
    Commission fees (including tax)\
    Other deductions
    
-The team requires a dashboard to efficiently track and analyze this data. The key functionalities needed for the dashboard include:\
+The team requires a dashboard to efficiently track and analyze this data. The key functionalities needed for the dashboard include:
 
 Monthly Payment Summary: Display the total amount of payments received for each month.\
 Outstanding Amount: Show the outstanding amounts for each month.\
 Detailed Breakdown: Provide a detailed view of deductions, fees, and charges per order.
+
 
 **Solution:**
 
