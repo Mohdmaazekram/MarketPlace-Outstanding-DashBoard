@@ -4,5 +4,5 @@
    
 * Utilized BigQuery and SQL queries to transform unstructured data from Excel sheets into a structured format.
    
-* Created a user-friendly dashboard displaying the details of orders placed by customers on other e-commerce partner’s platform to know the exact costing and selling price. 
-   The dashboard also includes details like outstanding amounts, order description, Tax deductions, and settlement status.
+* Created a user-friendly dashboard displaying the details of orders placed on different e-commerce partner’s platform and to know the exact margins. 
+   The dashboard also includes details like outstanding amounts, order description, Tax deductions and settlement status.
