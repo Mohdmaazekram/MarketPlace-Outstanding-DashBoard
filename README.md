@@ -1,8 +1,7 @@
-# MarketPlace-Outstanding-DashBoard
+Project Summary :
 
-* Developed an automated dashboard solution for the Marketplace team to process payment details from various e-commerce platforms like Amazon, Flipkart, Tatacliq, Myntra, etc.
-   
-* Utilized BigQuery and SQL queries to transform unstructured data from Excel sheets into a structured format.
-   
-* Created a user-friendly dashboard displaying the details of orders placed on different e-commerce partner’s platform and to know the exact margins. 
-   The dashboard also includes details like outstanding amounts, order description, Tax deductions and settlement status.
+For this initiative, I developed an automated dashboard solution to assist the Marketplace team in processing payment details from various e-commerce platforms like AMAZON, FLIPKART, TATACLIQ, and MYNTRA. The data from these platforms was initially unstructured, residing in EXCEL SHEET, and I utilized BigQuery along with SQL queries to transform it into a structured format for better analysis.
+
+To address the needs of the team, I created a user-friendly dashboard that presented essential information about the orders placed on each e-commerce platform. The dashboard displays details such as order descriptions, margins, outstanding amounts, tax deductions, and the settlement status of each order, allowing the team to monitor payments and their status in real-time.
+
+With this system, the Marketplace team was able to track and analyze payment details more efficiently, streamlining their workflow and providing clearer insights into the financial aspects of orders. This solution enabled the team to make informed decisions related to margins and payment settlements across different platforms.
