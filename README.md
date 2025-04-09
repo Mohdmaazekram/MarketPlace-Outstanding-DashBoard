@@ -1,4 +1,4 @@
-Project Summary :
+**Project Summary :**
 
 For this initiative, I developed an automated dashboard solution to assist the Marketplace team in processing payment details from various e-commerce platforms like AMAZON, FLIPKART, TATACLIQ, and MYNTRA. The data from these platforms was initially unstructured, residing in EXCEL SHEET, and I utilized BigQuery along with SQL queries to transform it into a structured format for better analysis.
 
